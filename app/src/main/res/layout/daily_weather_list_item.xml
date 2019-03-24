@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp"
+        >
+
+        <TextView
+            android:id="@+id/daily_date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="2/21" />
+
+        <TextView
+            android:id="@+id/daily_day_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="SUN"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/daily_icon_image_view"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="0.75"
+        android:padding="1dp"
+        tools:src="@drawable/ic_snow"/>
+
+    <TextView
+        android:id="@+id/daily_summary_text_view"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:lines="1"
+        android:ellipsize="end"
+        tools:text="Snow and sleet in the a.m." />
+
+    <TextView
+        android:id="@+id/daily_temperature_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="0.25"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:text="31º/23º"/>
+
+</LinearLayout>

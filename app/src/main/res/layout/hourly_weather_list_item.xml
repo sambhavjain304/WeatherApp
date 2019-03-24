@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/hourly_hour_text_view"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        tools:text="4 PM" />
+
+    <ImageView
+        android:id="@+id/hourly_icon_image_view"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="0.75"
+        android:padding="1dp"
+        tools:src="@drawable/ic_snow"/>
+
+    <TextView
+        android:id="@+id/hourly_summary_text_view"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:lines="1"
+        android:ellipsize="end"
+        tools:text="Mostly Clear"/>
+
+    <TextView
+        android:id="@+id/hourly_temperature_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="0.25"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:text="31º"/>
+
+</LinearLayout>

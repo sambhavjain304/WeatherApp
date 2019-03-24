@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurrentWeatherView">
+        <attr name="summaryText" format="string" />
+        <attr name="temperatureText" format="string" />
+        <attr name="apparentTemperatureText" format="string" />
+        <attr name="humidityText" format="string" />
+        <attr name="iconSrc" format="integer" />
+    </declare-styleable>
+</resources>

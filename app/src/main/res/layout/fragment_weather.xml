@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jeremyah19.android.weather.WeatherActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/current_weather_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jeremyah19.android.weather.CurrentWeatherView
+            android:id="@+id/current_weather_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:summaryText="Cloudy"/>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

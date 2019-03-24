@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_current"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/currently_summary_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                tools:text="Cloudy"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currently_temperature_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="24sp"
+                    tools:text="38º"/>
+
+                <TextView
+                    android:id="@+id/currently_apparent_temperature_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    tools:text="(Feels like 32º)"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/currently_icon_image_view"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            tools:src="@drawable/ic_clear_day"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="@string/title_humidity"/>
+
+            <TextView
+                android:id="@+id/currently_humidity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                tools:text="52%"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/currently_more_details_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical"
+            android:text="@string/button_more_details"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@drawable/ic_more_details"
+            android:drawableEnd="@drawable/ic_more_details"/>
+
+    </LinearLayout>
+
+</LinearLayout>
